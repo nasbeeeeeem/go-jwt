@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    volumes:
+      - type: bind
+        source: ./db
+        target: /var/lib/postgres/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+      TZ: Asia/Tokyo
