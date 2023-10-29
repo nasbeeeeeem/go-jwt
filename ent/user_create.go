@@ -9,7 +9,7 @@ import (
 
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/FarStep131/go-jwt/docker/ent/user"
+	"github.com/FarStep131/go-jwt/ent/user"
 )
 
 // UserCreate is the builder for creating a User entity.

@@ -5,12 +5,12 @@ package enttest
 import (
 	"context"
 
-	"github.com/FarStep131/go-jwt/docker/ent"
+	"github.com/FarStep131/go-jwt/ent"
 	// required by schema hooks.
-	_ "github.com/FarStep131/go-jwt/docker/ent/runtime"
+	_ "github.com/FarStep131/go-jwt/ent/runtime"
 
 	"entgo.io/ent/dialect/sql/schema"
-	"github.com/FarStep131/go-jwt/docker/ent/migrate"
+	"github.com/FarStep131/go-jwt/ent/migrate"
 )
 
 type (

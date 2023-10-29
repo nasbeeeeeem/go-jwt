@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/FarStep131/go-jwt/docker/ent"
+	"github.com/FarStep131/go-jwt/ent"
 )
 
 type UserRepository interface {

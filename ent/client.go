@@ -9,12 +9,12 @@ import (
 	"log"
 	"reflect"
 
-	"github.com/FarStep131/go-jwt/docker/ent/migrate"
+	"github.com/FarStep131/go-jwt/ent/migrate"
 
 	"entgo.io/ent"
 	"entgo.io/ent/dialect"
 	"entgo.io/ent/dialect/sql"
-	"github.com/FarStep131/go-jwt/docker/ent/user"
+	"github.com/FarStep131/go-jwt/ent/user"
 )
 
 // Client is the client that holds all ent builders.

@@ -10,8 +10,8 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/FarStep131/go-jwt/docker/ent/predicate"
-	"github.com/FarStep131/go-jwt/docker/ent/user"
+	"github.com/FarStep131/go-jwt/ent/predicate"
+	"github.com/FarStep131/go-jwt/ent/user"
 )
 
 // UserUpdate is the builder for updating User entities.

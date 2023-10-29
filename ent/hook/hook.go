@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/FarStep131/go-jwt/docker/ent"
+	"github.com/FarStep131/go-jwt/ent"
 )
 
 // The UserFunc type is an adapter to allow the use of ordinary

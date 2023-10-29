@@ -3,8 +3,8 @@
 package ent
 
 import (
-	"github.com/FarStep131/go-jwt/docker/ent/schema"
-	"github.com/FarStep131/go-jwt/docker/ent/user"
+	"github.com/FarStep131/go-jwt/ent/schema"
+	"github.com/FarStep131/go-jwt/ent/user"
 )
 
 // The init function reads all schema descriptors with runtime code

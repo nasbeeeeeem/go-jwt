@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"entgo.io/ent/dialect"
-	"github.com/FarStep131/go-jwt/docker/ent"
+	"github.com/FarStep131/go-jwt/ent"
 	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
 )

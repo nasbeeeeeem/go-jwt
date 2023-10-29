@@ -4,7 +4,7 @@ package user
 
 import (
 	"entgo.io/ent/dialect/sql"
-	"github.com/FarStep131/go-jwt/docker/ent/predicate"
+	"github.com/FarStep131/go-jwt/ent/predicate"
 )
 
 // ID filters vertices based on their ID field.

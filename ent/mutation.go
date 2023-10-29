@@ -10,8 +10,8 @@ import (
 
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
-	"github.com/FarStep131/go-jwt/docker/ent/predicate"
-	"github.com/FarStep131/go-jwt/docker/ent/user"
+	"github.com/FarStep131/go-jwt/ent/predicate"
+	"github.com/FarStep131/go-jwt/ent/user"
 )
 
 const (

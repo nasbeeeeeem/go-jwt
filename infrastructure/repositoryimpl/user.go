@@ -3,9 +3,9 @@ package repositoryimpl
 import (
 	"context"
 
-	"github.com/FarStep131/go-jwt/docker/ent"
-	"github.com/FarStep131/go-jwt/docker/ent/user"
 	"github.com/FarStep131/go-jwt/domain/repository"
+	"github.com/FarStep131/go-jwt/ent"
+	"github.com/FarStep131/go-jwt/ent/user"
 	"github.com/FarStep131/go-jwt/infrastructure/database"
 )
 
