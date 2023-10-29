@@ -4,6 +4,7 @@ go 1.21.1
 
 require (
 	entgo.io/ent v0.12.4
+	github.com/golang-jwt/jwt/v4 v4.5.0
 	github.com/lib/pq v1.10.9
 )
 

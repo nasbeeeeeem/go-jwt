@@ -102,3 +102,6 @@ $RECYCLE.BIN/
 
 # Docker
 docker/db
+
+# env
+/.env
