@@ -4,13 +4,13 @@ package enttest
 
 import (
 	"context"
-
-	"github.com/FarStep131/go-jwt/ent"
+	"go-jwt/ent"
 	// required by schema hooks.
-	_ "github.com/FarStep131/go-jwt/ent/runtime"
+	_ "go-jwt/ent/runtime"
+
+	"go-jwt/ent/migrate"
 
 	"entgo.io/ent/dialect/sql/schema"
-	"github.com/FarStep131/go-jwt/ent/migrate"
 )
 
 type (

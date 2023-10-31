@@ -2,7 +2,7 @@
 
 package runtime
 
-// The schema-stitching logic is generated in github.com/FarStep131/go-jwt/ent/runtime.go
+// The schema-stitching logic is generated in go-jwt/ent/runtime.go
 
 const (
 	Version = "v0.12.4"                                         // Version of ent codegen.

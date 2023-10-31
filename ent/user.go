@@ -4,11 +4,11 @@ package ent
 
 import (
 	"fmt"
+	"go-jwt/ent/user"
 	"strings"
 
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
-	"github.com/FarStep131/go-jwt/ent/user"
 )
 
 // User is the model entity for the User schema.

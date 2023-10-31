@@ -5,8 +5,9 @@ import (
 	"fmt"
 	"os"
 
+	"go-jwt/ent"
+
 	"entgo.io/ent/dialect"
-	"github.com/FarStep131/go-jwt/ent"
 	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
 )
@@ -16,10 +17,11 @@ type DBClient struct {
 }
 
 func NewDBClient() (*DBClient, error) {
-	if err := godotenv.Load(".env"); err != nil {
+	var err error
+	err = godotenv.Load("../.env")
+	if err != nil {
 		return nil, err
 	}
-
 	host := os.Getenv("DBHost")
 	port := os.Getenv("DBPort")
 	user := os.Getenv("DBUser")

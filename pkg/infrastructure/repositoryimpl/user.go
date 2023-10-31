@@ -3,10 +3,10 @@ package repositoryimpl
 import (
 	"context"
 
-	"github.com/FarStep131/go-jwt/domain/repository"
-	"github.com/FarStep131/go-jwt/ent"
-	"github.com/FarStep131/go-jwt/ent/user"
-	"github.com/FarStep131/go-jwt/infrastructure/database"
+	"go-jwt/ent"
+	"go-jwt/ent/user"
+	"go-jwt/pkg/domain/repository"
+	"go-jwt/pkg/infrastructure/database"
 )
 
 type userRepo struct {

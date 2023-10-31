@@ -5,8 +5,7 @@ package hook
 import (
 	"context"
 	"fmt"
-
-	"github.com/FarStep131/go-jwt/ent"
+	"go-jwt/ent"
 )
 
 // The UserFunc type is an adapter to allow the use of ordinary

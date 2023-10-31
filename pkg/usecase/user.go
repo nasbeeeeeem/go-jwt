@@ -5,10 +5,10 @@ import (
 	"errors"
 	"time"
 
-	"github.com/FarStep131/go-jwt/domain/repository"
-	"github.com/FarStep131/go-jwt/ent"
-	"github.com/FarStep131/go-jwt/myerror"
-	"github.com/FarStep131/go-jwt/util"
+	"go-jwt/ent"
+	"go-jwt/pkg/domain/repository"
+	"go-jwt/pkg/myerror"
+	"go-jwt/pkg/util"
 )
 
 type UseCase interface {
@@ -33,13 +33,11 @@ func (uc *useCase) Singup(c context.Context, username string, email string, pass
 	ctx, cancel := context.WithTimeout(c, uc.timeout)
 	defer cancel()
 
+	// メールアドレスの重複チェック
 	exsiteUser, err := uc.repository.GetUserByEmail(ctx, email)
 
-	if err != nil {
-		return nil, &myerror.BadRequestError{Err: err}
-	}
-
-	if exsiteUser.ID != 0 {
+	// ユーザーの重複
+	if exsiteUser != nil && err == nil {
 		return nil, &myerror.BadRequestError{Err: errors.New("user already exists")}
 	}
 

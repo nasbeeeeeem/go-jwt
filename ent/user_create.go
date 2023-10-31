@@ -6,10 +6,10 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"go-jwt/ent/user"
 
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/FarStep131/go-jwt/ent/user"
 )
 
 // UserCreate is the builder for creating a User entity.

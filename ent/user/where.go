@@ -3,8 +3,9 @@
 package user
 
 import (
+	"go-jwt/ent/predicate"
+
 	"entgo.io/ent/dialect/sql"
-	"github.com/FarStep131/go-jwt/ent/predicate"
 )
 
 // ID filters vertices based on their ID field.

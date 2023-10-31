@@ -6,13 +6,13 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"go-jwt/ent/user"
 	"reflect"
 	"sync"
 
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
-	"github.com/FarStep131/go-jwt/ent/user"
 )
 
 // ent aliases to avoid import conflicts in user's code.

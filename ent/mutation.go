@@ -6,12 +6,12 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"go-jwt/ent/predicate"
+	"go-jwt/ent/user"
 	"sync"
 
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
-	"github.com/FarStep131/go-jwt/ent/predicate"
-	"github.com/FarStep131/go-jwt/ent/user"
 )
 
 const (
