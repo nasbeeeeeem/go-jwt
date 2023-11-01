@@ -11,6 +11,7 @@ import (
 	"go-jwt/pkg/interfaces/api/middleware"
 	"go-jwt/pkg/usecase"
 
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
@@ -33,6 +34,31 @@ func Server(addr string) {
 
 	r = gin.Default()
 
+	r.Use(cors.New(cors.Config{
+		// 許可するアクセス元
+		AllowOrigins: []string{
+			"http://192.168.10.114:3000",
+			"http://localhost:3000",
+		},
+		// 許可するメソッド
+		AllowMethods: []string{
+			"POST",
+			"GET",
+		},
+
+		AllowHeaders: []string{
+			"Access-Control-Allow-Credentials",
+			"Access-Control-Allow-Headers",
+			"Content-Type",
+			"Content-Length",
+			"Accept-Encoding",
+			"Authorization",
+		},
+		// Cookieの許可
+		AllowCredentials: true,
+	}))
+
+	// アクセスポイント
 	r.POST("/signup", userHandler.HandlerSing)
 	r.POST("login", userHandler.HandlerLogin)
 	r.GET("/logout", userHandler.HandlerLogout)

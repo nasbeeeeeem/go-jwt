@@ -104,7 +104,11 @@ func (h *handler) HandlerLogin(c *gin.Context) {
 			return
 		}
 	}
-	c.SetCookie("jwt", singedString, 60*60*24, "/", "localhost", false, true)
+
+	// samesiteをnonemodeに設定する
+	c.SetSameSite(http.SameSiteNoneMode)
+	// レスポンスヘッダーにcookieを登録
+	c.SetCookie("jwt", singedString, 60*60*24, "/", "localhost", true, true)
 
 	c.JSON(http.StatusOK, &response{
 		ID:       int64(user.ID),
